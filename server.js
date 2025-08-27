@@ -43,6 +43,9 @@ const allowedOrigins = [
   "http://localhost:5173", // web dev
   "http://10.0.2.2:5000",  // Flutter emulator access (if needed)
   "http://localhost:5000", // Flutter web
+  "https://the-coffee-shop-fe-pqkv.vercel.app",
+  "https://the-coffee-shop-fe-pqkv-git-master-nhuttans-projects.vercel.app",
+  "https://the-coffee-shop-fe-pqkv-k3erbnv7i-nhuttans-projects.vercel.app"
 ];
 
 app.use(
