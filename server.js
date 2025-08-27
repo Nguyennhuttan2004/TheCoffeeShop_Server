@@ -1,6 +1,4 @@
-app.get('/', (req, res) => {
-  res.send('TheCoffeeShop Server is running!');
-});const express = require("express");
+const express = require("express");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
@@ -92,7 +90,7 @@ app.use('/api/common/payment', momoPaymentRouter);
 app.use('/api', supportRequestRouter);
 app.use('/api', supportChatRouter);
 
+app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));
 app.get('/', (req, res) => {
   res.send('TheCoffeeShop Server is running!');
 });
-app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));
